@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔡鹏祥 - 个人主页</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. 左侧悬浮导航栏 -->
+    <nav id="navbar">
+        <!-- <div class="nav-logo">PORTFOLIO</div> -->
+        <ul class="nav-links" id="nav-list">
+            <!-- JS Inject Here -->
+        </ul>
+    </nav>
+
+    <div class="container" id="main-content">
+
+        <!-- PAGE 1: 个人简介 -->
+        <section id="home" class="profile-section">
+            <div class="avatar-area">
+                <!-- 替换图片链接 -->
+                <img src="./statics/avatar.png" alt="蔡鹏祥">
+            </div>
+            <div class="profile-info" style="width: 100%; text-align: center;">
+                <h1>蔡鹏祥</h1>
+                <!-- <h1>Pengxiang Cai</h1> -->
+                <p style="font-size: 1.1rem; color: #666;">
+                    华东理工大学 (211) | 软件工程 | 2004.12.30<br>
+                    📞 18762362387 | ✉️ caipengxiang1230@163.com
+                </p>
+                <div style="margin-top:15px;">
+                     <a href="https://github.com/uishd666" target="_blank" style="color:var(--primary-color); font-weight:bold;">🔗 GitHub: uishd666</a>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3 style="color:var(--primary-color); margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:10px;">🎓 教育背景</h3>
+                    <p><strong>排名: 5/69</strong></p>
+                    <p>荣誉：国家奖学金、经意奖学金、优秀学生干部</p>
+                    <p>核心高分课程：面向对象编程(99)、离散数学(97)、机器学习(97)、概率论(96)</p>
+                    <p>英语水平：六级 502</p>
+                </div>
+                <div class="info-box">
+                    <h3 style="color:var(--primary-color); margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:10px;">🏆 竞赛获奖</h3>
+                    <ul>
+                        <li><strong>MathorCup 数学应用挑战赛 - <span class="highlight-text">全国一等奖</span></strong></li>
+                        <li>全国大学生电子商务“三创”挑战赛 - <span class="highlight-text">上海赛区特等奖</span></li>
+                        <li>全国大学生职业规划大赛 - 上海赛区金奖季军</li>
+                        <li>上海市大学生计算机应用能力大赛 - 二等奖</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects will be injected here -->
+        <div id="projects-container"></div>
+        
+    </div>
+</body>
+</html>
