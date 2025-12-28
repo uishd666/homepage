@@ -207,7 +207,6 @@ ul { list-style: none; }
 }
 
 /* --- 布局 A: 有图片 (宽屏优化) --- */
-/* 图片在容器内竖直居中 */
 .layout-with-image {
     display: grid;
     grid-template-columns: 1.0fr 1.6fr; /* 文字占略多一点 */
