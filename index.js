@@ -258,10 +258,16 @@ projects.forEach(proj => {
     let contentHtml = '';
     if (proj.image) {
         // 有图片布局：文字在右，图片在左 (或者反过来，这里采用左图右文结构，移动端会自动堆叠)
+        const imageHtml = proj.link 
+            ? `<a href="${proj.link}" target="_blank" class="project-image-link">
+                   <img src="${proj.image}" alt="${proj.title}">
+               </a>`
+            : `<img src="${proj.image}" alt="${proj.title}">`;
+        
         contentHtml = `
             <div class="layout-with-image">
-                    <div class="project-img-container">
-                    <img src="${proj.image}" alt="${proj.title}">
+                <div class="project-img-container">
+                    ${imageHtml}
                 </div>
                 <div class="content-block">
                     ${proj.description}
