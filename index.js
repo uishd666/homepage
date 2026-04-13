@@ -51,12 +51,12 @@ const projects = [
         `
     },
     {
-        id: "chemsara",
-        title: "ChemSARA",
+        id: "chemrang",
+        title: "ChemRANG",
         subtitle: "Chinese Chemical Letters (在投) | 第一作者",
         tags: ["AI-Ready Datasets", "DeepSeek-V3.2", "LoRA"],
         date: "2025.10 - 2026.04",
-        image: "./statics/chemsara.png", // 如无图片可改为 null
+        image: "./statics/chemrang.png", // 如无图片可改为 null
         description: `
             <h3>📌 数据集构建与清洗</h3>
             <p>独立主导化学反应数据清洗与标准化 Pipeline 的开发，整合 RDKit、PubChem 与 CIRpy 实现分子标识符的精准对齐。</p>
@@ -64,7 +64,7 @@ const projects = [
             <h3>💡 核心算法创新</h3>
             <ul>
                 <li><strong>LLM 标注与微调：</strong>基于 <strong>DeepSeek-V3.2</strong> 设计 Zero-shot Prompt 完成试剂的细粒度角色标注，并运用 <strong>LoRA</strong> 技术高效微调 <strong>LLaMa-3.2-1B</strong> 等下游语言模型。</li>
-                <li><strong>双驱增强框架：</strong>提出 ChemSARA 两阶段数据增强框架，首创“<strong>LLM 推理标注+化学机制约束</strong>”双驱模式。</li>
+                <li><strong>双驱增强框架：</strong>提出 ChemRANG 两阶段数据增强框架，首创“<strong>LLM 推理标注+化学机制约束</strong>”双驱模式。</li>
                 <li><strong>精准解析：</strong>将历史数据库中的模糊试剂标签精准解析为 15 类细粒度功能角色，并靶向生成高保真反事实负样本。</li>
             </ul>
 
