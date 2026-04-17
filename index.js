@@ -52,7 +52,7 @@ const projects = [
     },
     {
         id: "chemrang",
-        title: "ChemRANG",
+        title: "ChemRANG: Building AI-Ready Datasets via Mechanism-Informed Curation to Learn True Reaction Feasibility Boundaries",
         subtitle: "Chinese Chemical Letters (在投) | 第一作者",
         tags: ["AI-Ready Datasets", "DeepSeek-V3.2", "LoRA"],
         date: "2025.10 - 2026.04",
