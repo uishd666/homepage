@@ -52,6 +52,7 @@ const projects = [
     },
     {
         id: "chemrang",
+        navTitle: "ChemRANG",
         title: "ChemRANG: Building AI-Ready Datasets via Mechanism-Informed Curation to Learn True Reaction Feasibility Boundaries",
         subtitle: "Chinese Chemical Letters (在投) | 第一作者",
         tags: ["AI-Ready Datasets", "DeepSeek-V3.2", "LoRA"],
@@ -226,7 +227,7 @@ navList.appendChild(homeLi);
 
 projects.forEach(proj => {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="#${proj.id}" class="nav-item">${proj.title}</a>`;
+    li.innerHTML = `<a href="#${proj.id}" class="nav-item">${proj.navTitle || proj.title}</a>`;
     navList.appendChild(li);
 });
 
