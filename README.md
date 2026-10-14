@@ -14,13 +14,13 @@ Open http://localhost:8000. Edit academic content directly in `index.html`.
 
 - **Avatar:** hover to slide the front image aside; click or use Enter/Space to toggle. Escape closes it. Replace `statics/avatar-alternate.png` with the actual second portrait (and update its `src` and `alt` in `index.html` when the filename changes).
 - **Fireworks:** click the subtle arrow in the footer. It launches three short bursts without blocking links. Repeated clicks cannot start overlapping animations. Reduced-motion preferences show stationary stars instead.
-- **Globe:** a local rotating Canvas globe with a Shanghai marker; drag to rotate, click to reveal a greeting. Animation pauses outside the viewport or in a background tab. This is a decorative globe, not a visitor tracker.
+- **Globe:** a local rotating Canvas globe with a Shanghai marker; drag to rotate, click to reveal a greeting. Animation pauses outside the viewport or in a background tab. This is a decorative fallback, not a visitor tracker. It is hidden once the configured visitor widget renders.
 
-## Enable real visitor statistics
+## Visitor statistics
 
-Create a website widget at https://mapmyvisitors.com/ using the final GitHub Pages URL and choose its Globe Counter. Paste the exact provider-issued embed snippet **inside** the `#visitor-widget` container in `index.html`. The local globe automatically hides once the provider's widget is present. Remove the snippet to return to the local globe.
+The owner-provided MapMyVisitors Globe Counter is configured in the `#visitor-widget` container in `index.html`. Its script uses HTTPS and loads asynchronously. The local globe remains available while loading or if the service is blocked, and hides when the real `.mmvst_outer` widget is inserted. To change accounts, replace the provider-issued snippet inside this container. Remove it to return to the local globe.
 
-A valid account-issued widget ID is required. No visitor counts or locations are simulated. Counts begin when tracking is installed, and IP-based locations approximate network exit locations. The provider receives visitor network information when its script loads. The local avatar, fireworks, and globe do not send visitor data anywhere.
+No visitor counts or locations are simulated. Counts begin when tracking is installed, and IP-based locations approximate network exit locations. The provider receives visitor network information when its script loads. The local avatar, fireworks, and globe do not send visitor data anywhere.
 
 ## Geographic data
 

@@ -75,7 +75,7 @@ footer { display: block; }
 #fireworks-trigger:hover { color: var(--link); }
 #fireworks-trigger:disabled { cursor: default; opacity: .45; }
 #fireworks-canvas { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10; }
-.globe-area { margin: 24px auto 0; width: min(100%, 280px); text-align: center; }
+.globe-area { margin: 24px auto 0; width: min(100%, 200px); text-align: center; isolation: isolate; }
 .globe-button { display: block; width: 180px; height: 180px; padding: 0; border: 0; background: transparent; margin: 0 auto; cursor: grab; touch-action: pan-y; }
 .globe-button.is-dragging { cursor: grabbing; }
 #globe { width: 100%; height: 100%; display: block; }

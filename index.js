@@ -240,14 +240,14 @@
 
   // A provider's real widget takes the local decorative globe's place.
   function syncWidget() {
-    const connected = widget.childElementCount > 0;
+    const connected = Boolean(widget.querySelector('.mmvst_outer')); // Wait for rendered markup, not just its script.
     globeButton.hidden = connected;
     caption.hidden = connected;
     if (connected) visible = false;
     else visible = globeButton.getBoundingClientRect().top < innerHeight && globeButton.getBoundingClientRect().bottom > 0;
     syncAnimation();
   }
-  new MutationObserver(syncWidget).observe(widget, { childList: true });
+  new MutationObserver(syncWidget).observe(widget, { childList: true, subtree: true });
   syncWidget();
   new IntersectionObserver(([entry]) => {
     visible = entry.isIntersecting && !globeButton.hidden;
