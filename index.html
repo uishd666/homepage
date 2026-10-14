@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#ffffff">
   <title>蔡鹏祥 | Pengxiang Cai</title>
   <link rel="stylesheet" href="index.css">
+  <script src="statics/globe-land.js" defer></script>
+  <script src="index.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到正文</a>
@@ -19,7 +21,10 @@
         <p class="contact"><a href="mailto:caipengxiang1230@gmail.com">caipengxiang1230@gmail.com</a><br>电话：<a href="tel:+8618762362387">18762362387</a></p>
         <div class="links"><a href="https://github.com/uishd666">GitHub</a><a href="https://www.yaoll.top/#/">个人笔记</a></div>
       </div>
-      <img class="avatar" src="statics/avatar.png" alt="蔡鹏祥的头像" width="156" height="156">
+      <button class="avatar-stack" type="button" aria-label="切换头像" aria-pressed="false" title="看看另一面">
+        <img class="avatar avatar-back" src="statics/avatar-alternate.png" alt="小狗歪头微笑的第二张头像" width="156" height="156">
+        <img class="avatar avatar-front" src="statics/avatar.png" alt="蔡鹏祥的头像" width="156" height="156">
+      </button>
     </header>
     <nav aria-label="页面导航"><a href="#education">教育背景</a><a href="#publications">论文成果</a><a href="#research">科研经历</a><a href="#projects">项目经历</a><a href="#honors">荣誉与获奖</a></nav>
     <main id="main">
@@ -62,7 +67,18 @@
         <ul class="awards"><li><span>2025.05</span>五一杯数学建模大赛 · 全国三等奖</li><li><span>2025.03</span>全国大学生职业规划大赛 · 上海赛区金奖季军</li><li><span>2024.08</span>全国大学生电子商务“创新、创意及创业”挑战赛 · 上海赛区特等奖</li><li><span>2024.05</span>上海市大学生计算机应用能力大赛 · 二等奖</li><li><span>2024.04</span>MathorCup 数学应用挑战赛 · 全国一等奖</li></ul>
       </section>
     </main>
-    <footer><span>蔡鹏祥 · Pengxiang Cai</span><a href="#about">返回顶部 ↑</a></footer>
+    <footer>
+      <div class="footer-line"><span>蔡鹏祥 · Pengxiang Cai</span><div class="footer-actions"><button id="fireworks-trigger" type="button" aria-label="放一束烟花" title="放一束烟花" hidden>↗</button><a href="#about">返回顶部 ↑</a></div></div>
+      <div class="globe-area" id="globe-area">
+        <button class="globe-button" id="globe-button" type="button" aria-label="旋转地球，来自上海的问候" title="拖动地球，或点击打个招呼" hidden>
+          <canvas id="globe" width="360" height="360" aria-hidden="true"></canvas>
+        </button>
+        <p class="globe-caption" id="globe-caption" hidden>Shanghai · <span lang="en">Hello from Shanghai.</span></p>
+        <!-- Paste your website-specific visitor globe embed code into this container.
+             Keep the container empty until the provider issues a real widget ID. -->
+        <div id="visitor-widget"></div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
