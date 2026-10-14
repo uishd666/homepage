@@ -1,67 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蔡鹏祥 - 个人主页</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="蔡鹏祥的学术主页：教育背景、人工智能与化学研究、论文成果及项目经历。">
+  <meta name="theme-color" content="#ffffff">
+  <title>蔡鹏祥 | Pengxiang Cai</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    <!-- 1. 左侧悬浮导航栏 -->
-    <nav id="navbar">
-        <!-- <div class="nav-logo">PORTFOLIO</div> -->
-        <ul class="nav-links" id="nav-list">
-            <!-- JS Inject Here -->
-        </ul>
-    </nav>
-
-    <div class="container" id="main-content">
-
-        <!-- PAGE 1: 个人简介 -->
-        <section id="home" class="profile-section">
-            <div class="avatar-area">
-                <!-- 替换图片链接 -->
-                <img src="./statics/avatar.png" alt="蔡鹏祥">
-            </div>
-            <div class="profile-info" style="width: 100%; text-align: center;">
-                <h1>蔡鹏祥</h1>
-                <!-- <h1>Pengxiang Cai</h1> -->
-                <p style="font-size: 1.1rem; color: #666;">
-                    华东理工大学 (211) | 软件工程 | 2004.12.30<br>
-                    📞 18762362387 | ✉️ caipengxiang1230@163.com
-                </p>
-                <!-- 修改后的链接区域 -->
-                <div style="margin-top:15px;">
-                     <a href="https://github.com/uishd666" target="_blank" style="color:var(--primary-color); font-weight:bold;">🔗 GitHub</a> | 
-                     <a href="https://www.yaoll.top/#/" target="_blank" style="color:var(--primary-color); font-weight:bold;">📝 个人笔记</a>
-                </div>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-box">
-                    <h3 style="color:var(--primary-color); margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:10px;">🎓 教育背景</h3>
-                    <p><strong>排名: 3/70</strong></p>
-                    <p>荣誉：国家奖学金、经意奖学金、优秀学生干部</p>
-                    <p>核心高分课程：面向对象编程(99)、离散数学(97)、机器学习(97)、概率论(96)</p>
-                    <p>英语水平：六级 502</p>
-                </div>
-                <div class="info-box">
-                    <h3 style="color:var(--primary-color); margin-bottom:15px; border-bottom:1px solid #ddd; padding-bottom:10px;">🏆 竞赛获奖</h3>
-                    <ul>
-                        <li><strong>MathorCup 数学应用挑战赛 - <span class="highlight-text">全国一等奖</span></strong></li>
-                        <li>全国大学生电子商务“三创”挑战赛 - <span class="highlight-text">上海赛区特等奖</span></li>
-                        <li>全国大学生职业规划大赛 - 上海赛区金奖季军</li>
-                        <li>上海市大学生计算机应用能力大赛 - 二等奖</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects will be injected here -->
-        <div id="projects-container"></div>
-        
-    </div>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="page">
+    <header id="about" class="profile">
+      <div>
+        <h1>蔡鹏祥 <span lang="en">Pengxiang Cai</span></h1>
+        <p class="affiliation">华东理工大学 · 信息科学与工程学院 · 软件工程</p>
+        <p>研究方向：人工智能与化学、语言模型、多智能体系统、多模态表示学习。</p>
+        <p class="contact"><a href="mailto:caipengxiang1230@gmail.com">caipengxiang1230@gmail.com</a><br>电话：<a href="tel:+8618762362387">18762362387</a></p>
+        <div class="links"><a href="https://github.com/uishd666">GitHub</a><a href="https://www.yaoll.top/#/">个人笔记</a></div>
+      </div>
+      <img class="avatar" src="statics/avatar.png" alt="蔡鹏祥的头像" width="156" height="156">
+    </header>
+    <nav aria-label="页面导航"><a href="#education">教育背景</a><a href="#publications">论文成果</a><a href="#research">科研经历</a><a href="#projects">项目经历</a><a href="#honors">荣誉与获奖</a></nav>
+    <main id="main">
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">教育背景 <span lang="en">Education</span></h2>
+        <article class="entry"><div class="entry-heading"><h3>华东理工大学 · 软件工程本科</h3><p class="date">2022.09 — 2027.06（预计）</p></div><p>信息科学与工程学院 · 专业排名 3/72 · 曾任 IT 部负责人</p><p>专业课程：面向对象编程（99）、离散数学（97）、机器学习（97）、概率论（96）；英语六级 502。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>复旦大学 · 电子信息博士</h3><p class="date">2027.09（预计入学）</p></div><p>计算与智能创新学院</p></article>
+      </section>
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">论文成果 <span lang="en">Publications &amp; Preprints</span></h2>
+        <h3 class="group-title">已发表 / 已录用</h3>
+        <ol class="papers">
+          <li><h4 lang="en">ChemRANG: Building AI-Ready Datasets via Mechanism-Informed Curation to Learn True Reaction Feasibility Boundaries</h4><p><strong>Pengxiang Cai</strong>, et al.</p><p><cite>Chinese Chemical Letters</cite>, 2026 · 独立第一作者 · 已发表</p></li>
+          <li><h4 lang="en">Incomplete Multi-view Sequential Representation Learning with Cascaded Cross-view Evolution Attention</h4><p>Wenbo Dong, <strong>Pengxiang Cai</strong>, Zhenni Piao, Ruobing Liu, Ruoyu Tao</p><p><cite>IEEE Transactions on Pattern Analysis and Machine Intelligence</cite>, 2025 · 第二作者（学生第一）· 已录用</p></li>
+        </ol>
+        <h3 class="group-title">预印本 / 审稿中</h3>
+        <ol class="papers" start="3">
+          <li><h4 lang="en">ChemVD: Constructing Open-world Reaction Variable Spaces via Hierarchical Contrastive Alignment</h4><p><strong>Pengxiang Cai</strong>, et al.</p><p>ICLR 2027 · 第一作者 · Under Review</p></li>
+          <li><h4 lang="en">ChemBOMAS: Accelerated BO in Chemistry with LLM-Enhanced Multi-Agent System</h4><p>Dong Han, Zhehong Ai, <strong>Pengxiang Cai</strong>, et al.</p><p>arXiv:2509.08736, 2025 · 共同第一作者 · 已投稿 <cite>Nature Computational Science</cite></p><a href="https://arxiv.org/abs/2509.08736">arXiv</a> <span class="separator">/</span> <a href="https://arxiv.org/pdf/2509.08736">PDF</a></li>
+          <li><h4 lang="en">Minimal Witness Reinforcement Learning</h4><p>T. Y. Tsui, Zihao Ye, <strong>Pengxiang Cai</strong>, Yanchao Li, Yuqiang Li, Zhehong Ai</p><p>AAAI 2027 · Under Review</p></li>
+        </ol>
+      </section>
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">科研经历 <span lang="en">Research</span></h2>
+        <article class="entry"><div class="entry-heading"><h3>ChemVD · 开放世界反应条件检索</h3><p class="date">2026.04 — 2026.09</p></div><p>将开放候选试剂集合中的反应条件推荐转化为检索与排序任务，构建低预算实验筛选变量空间；提出结构感知层次化架构与多正样本学习损失，支持开放世界泛化。</p><p>在 HTE-OOD 评测中，基于 LLaMA-3.1 8B，在 20% 预算下达到 68.78% 的平均可达最高产率，较 DeepSeek-V4-pro 基线提高 20.44 个百分点。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>ChemRANG · 机制约束的化学数据构建</h3><p class="date">2025.10 — 2026.04</p></div><p>独立开发反应数据清洗与标准化流程，整合 RDKit、PubChem 与 CIRpy；通过语言模型推理标注与化学机制约束，将试剂解析为 15 类功能角色，并生成反事实负样本。</p><p>在 Pistachio 的 Suzuki 数据上实现超过 97% 的标注准确率与超过 99% 的负样本机制合理性，构建超过 13.6 万条高质量样本；使用 LoRA 微调下游语言模型验证数据效果。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>ChemBOMAS · 语言模型辅助贝叶斯优化</h3><p class="date">2025.06 — 2026.04</p></div><p>独立负责全流程实现与语言模型微调，设计化学感知提示与伪数据精炼机制，在 2×A800 GPU 上完成分布式训练。通过知识驱动的搜索空间分解与数据驱动的伪数据生成协同提高优化效率。</p><p>仅使用 1% 标注样本，将贝叶斯优化效率提升 5 倍；在 3 个化学反应基准上，最优结果提升 3–10%，收敛加速 2–5 倍。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>IMvCCEA · 不完整多视图序列表示学习</h3><p class="date">2024.09 — 2025.10</p></div><p>作为技术负责人主导模型框架与 CCEV-A 机制设计，通过渐进式对齐、补偿与融合处理模态缺失、数据异构和分布漂移。</p><p>在 CH-SIMS、CH-SIMS-V2、CMU-MOSI、CMU-MOSEI 四个公开数据集上，平均 F1 提高 7.3%，准确率提高 5.2%，显存节省 41%；已申请国家发明专利 1 项。</p></article>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">项目经历 <span lang="en">Projects</span></h2>
+        <article class="entry"><div class="entry-heading"><h3>ChemRext · 上海人工智能实验室</h3><p class="date">2025.09 — 2025.10</p></div><p>独立完成算法设计、代码开发与流程封装，通过多标签分块和并发摘要实现秒级文献知识抽取。在相同任务上，抽取精度超过 GPT-5、DeepSeek-V3.2，与专家手工标注相当；用于支持 ChemBOMAS 湿实验变量设计。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>Wingwing Agent · 上海人工智能实验室</h3><p class="date">2025.06 — 2025.07</p></div><p>参与微服务化智能仿真平台开发，整合 Agent 决策、风洞模拟、三维模型生成与实时可视化。实现单实例 20 路并发和 GPU/CPU 异构加速，仿真效率提升 4.8 倍；三周内完成容器化交付、Web 三维交互与端到端联调。</p></article>
+        <article class="entry"><div class="entry-heading"><h3>Intern-EPR · 上海人工智能实验室</h3><p class="date">2024.06 — 2024.11</p></div><p>独立负责 Vue 3 与 FastAPI 全栈开发，接入 4 个神经网络模型，完成 7 个后端 API 与 22 个前端业务组件，代码覆盖率 92%。结合图像识别、EPR 数据库和自动测量系统，在 1 小时内分析 36 种催化体系的反应中间体。</p><a href="https://internspect-epr.intern-ai.org.cn/home">项目网站</a></article>
+        <article class="entry"><div class="entry-heading"><h3>遗韵长三角·智游</h3><p class="date">2023.12 — 2024.11</p></div><p>独立完成 Django、React Native 与微信小程序的全栈开发，集成百度千帆 Lite 与 RAG 检索增强，支持超过 200 种场景意图，平均问答延迟低于 1.2 秒。完成流式问答、登录注册、预约与路线规划功能，申请软件著作权 1 项。</p></article>
+      </section>
+      <section id="honors" aria-labelledby="honors-title">
+        <h2 id="honors-title">荣誉与获奖 <span lang="en">Honors &amp; Awards</span></h2>
+        <p>国家奖学金（两次）、校特等奖学金、经意企业奖学金、优秀学生。</p>
+        <ul class="awards"><li><span>2025.05</span>五一杯数学建模大赛 · 全国三等奖</li><li><span>2025.03</span>全国大学生职业规划大赛 · 上海赛区金奖季军</li><li><span>2024.08</span>全国大学生电子商务“创新、创意及创业”挑战赛 · 上海赛区特等奖</li><li><span>2024.05</span>上海市大学生计算机应用能力大赛 · 二等奖</li><li><span>2024.04</span>MathorCup 数学应用挑战赛 · 全国一等奖</li></ul>
+      </section>
+    </main>
+    <footer><span>蔡鹏祥 · Pengxiang Cai</span><a href="#about">返回顶部 ↑</a></footer>
+  </div>
 </body>
 </html>
